@@ -1,0 +1,41 @@
+{
+  "name": "autopath-backend",
+  "version": "1.0.0",
+  "description": "AutoPath Backend API - Shared Auto-Rickshaw Transit Discovery for Kolkata",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "migrate": "node database/migrate.js",
+    "seed": "node database/seed.js",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "keywords": [
+    "autopath",
+    "kolkata",
+    "transit",
+    "auto-rickshaw",
+    "gis",
+    "postgresql",
+    "express"
+  ],
+  "author": "AutoPath Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.13.1",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "pg-mem": "^2.8.1"
+  }
+}
+
